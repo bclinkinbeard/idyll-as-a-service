@@ -8,8 +8,9 @@
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.3",
     "express": "^4.15.3",
-    "idyll": "https://github.com/idyll-lang/idyll.git#surface-bundling-errors",
+    "idyll": "^1.4.1",
     "idyll-component": "^1.1.0",
+    "idyll-default-components": "^1.0.3",
     "reactable": "^0.14.1"
   }
 }
