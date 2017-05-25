@@ -1,0 +1,13 @@
+{
+  "name": "idyll-as-a-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "idyll": "git+ssh://git@github.com:idyll-lang/idyll.git#3bb8fe96ed165a14eaa88e390e02de542e2c7c3f"
+  }
+}
