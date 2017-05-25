@@ -8,6 +8,6 @@
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.3",
     "express": "^4.15.3",
-    "idyll": "git+ssh://git@github.com:idyll-lang/idyll.git#3bb8fe96ed165a14eaa88e390e02de542e2c7c3f"
+    "idyll": "https://github.com/idyll-lang/idyll.git#master"
   }
 }
