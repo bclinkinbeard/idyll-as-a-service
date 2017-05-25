@@ -12,7 +12,19 @@ app.set('x-powered-by', false)
 app.set('json spaces', 2)
 
 app.get('/', (req, res) => {
-  res.send('GET is not supported. POST Idyll source to receive output.')
+  if (!req.query.src) return res.send('hi')
+
+  idyll({
+    inputString: req.query.src,
+    output: 'tmp',
+    minify: false,
+    debug: true,
+    compilerOptions: {spellcheck: false}
+  })
+  .once('update', (output) => {
+    res.json(output)
+  })
+  .build(req.query.src)
 })
 
 app.post('/', (req, res) => {
