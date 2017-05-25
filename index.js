@@ -26,7 +26,7 @@ app.post('/', (req, res) => {
   .once('update', (output) => {
     res.json(output)
   })
-  .build(req.body)
+  .build(req.body.src)
 })
 
 app.listen(process.env.PORT || 3001, () => {
