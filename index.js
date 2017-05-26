@@ -33,6 +33,7 @@ const handleRequest = (req, res) => {
     compilerOptions: {spellcheck: false}
   })
   .once('update', (output) => {
+    output.previewId = id;
     res.json(output)
   })
   .build(input.src)
